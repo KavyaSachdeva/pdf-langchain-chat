@@ -1,6 +1,4 @@
-"""
-Document processor for loading and chunking files.
-"""
+# Document processor for loading and chunking files.
 from pathlib import Path
 from typing import List
 from langchain_community.document_loaders import PyPDFLoader
@@ -11,7 +9,6 @@ from config.settings import CHUNK_SIZE, CHUNK_OVERLAP
 
 
 class DocumentProcessor:
-    """Handles loading and processing of documents."""
 
     def __init__(self):
         self.text_splitter = RecursiveCharacterTextSplitter(
@@ -21,8 +18,8 @@ class DocumentProcessor:
         )
         print("Document processor initialized")
 
-    def load_pdf(self, file_path: Path) -> List[Document]:
-        """Load a PDF file and return documents."""
+    def load_pdf(self, file_path):
+        # Load a PDF file and return documents.
         print(f"Loading PDF: {file_path}")
 
         loader = PyPDFLoader(str(file_path))
