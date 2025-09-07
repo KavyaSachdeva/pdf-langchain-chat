@@ -2,6 +2,14 @@
 
 Ask questions about your PDF documents using local AI. No API keys required.
 
+![RAG File Assistant Interface](images/demo-screenshot.png)
+
+## Demo Video
+
+### Quick Demo
+
+https://github.com/KavyaSachdeva/pdf-langchain-chat/blob/main/rag-file-assistant/images/Screen%20Recording%202025-09-07%20at%204.28.07%20PM.mov
+
 ## What It Does
 
 - Upload PDF files
