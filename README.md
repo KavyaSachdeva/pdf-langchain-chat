@@ -1,10 +1,10 @@
-# RAG File Assistant
+# 📚 RAG File Assistant
 
 Ask questions about your PDF documents using local AI. No API keys required.
 
 ![RAG File Assistant Interface](images/demo-screenshot.png)
 
-## Demo Video
+## 🎬 Demo Video
 
 ### Quick Demo
 
@@ -17,7 +17,7 @@ https://github.com/KavyaSachdeva/pdf-langchain-chat/blob/main/rag-file-assistant
 - Get AI answers with source citations
 - Filter searches to specific documents
 
-## Quick Start
+## 🚀 Quick Start
 
 1. **Install dependencies:**
 
