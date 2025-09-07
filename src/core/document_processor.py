@@ -29,7 +29,7 @@ class DocumentProcessor:
         return documents
 
     def split_documents(self, documents: List[Document]) -> List[Document]:
-        """Split documents into smaller chunks."""
+        # Splits documents into smaller chunks.
         print(f"Splitting {len(documents)} documents into chunks...")
 
         chunks = self.text_splitter.split_documents(documents)
@@ -38,7 +38,7 @@ class DocumentProcessor:
         return chunks
 
     def process_pdf(self, file_path: Path) -> List[Document]:
-        """Load and split a PDF file."""
+        # Loads and splits a PDF file.
         # Load the PDF
         documents = self.load_pdf(file_path)
 

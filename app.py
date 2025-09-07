@@ -328,24 +328,24 @@ def main():
         # Question input with examples
         question = st.text_input(
             "Enter your question:",
-            placeholder="e.g., What is Nike's revenue in 2023? OR Summarize my experience from my resume"
+            placeholder="e.g., What was the company's revenue growth? OR Summarize my experience from my resume"
         )
 
         # Example questions
         st.markdown("**Example questions:**")
         col1, col2, col3, col4 = st.columns(4)
         with col1:
-            if st.button("💰 Revenue"):
-                st.session_state.example_question = "What is Nike's revenue in 2023?"
+            if st.button("💰 Financial"):
+                st.session_state.example_question = "What was the company's revenue growth last quarter?"
         with col2:
-            if st.button("🏢 Distribution"):
-                st.session_state.example_question = "How many distribution centers does Nike have?"
+            if st.button("🏢 Operations"):
+                st.session_state.example_question = "How many employees does the company have?"
         with col3:
             if st.button("📊 Summary"):
-                st.session_state.example_question = "Summarize Nike's business model"
+                st.session_state.example_question = "Summarize the main points from the annual report"
         with col4:
-            if st.button("👤 My Experience"):
-                st.session_state.example_question = "Summarize my experience from my resume"
+            if st.button("👤 Personal"):
+                st.session_state.example_question = "What are my key skills and experience?"
 
         # Use example question if selected
         if 'example_question' in st.session_state:

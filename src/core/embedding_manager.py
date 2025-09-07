@@ -15,10 +15,9 @@ from config.settings import EMBEDDING_MODEL, CHROMA_DB_DIR
 
 
 class EmbeddingManager:
-    """Manages document embeddings using HuggingFace and ChromaDB."""
+    # Manages document embeddings using HuggingFace and ChromaDB.
 
     def __init__(self):
-        """Initialize the embedding manager."""
         print("Initializing embedding manager...")
 
         # Initialize HuggingFace embeddings
